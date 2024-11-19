@@ -1,0 +1,9 @@
+def generate_chat():
+    print("Welcome to the chat!")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == 'exit':
+            print("Goodbye!")
+            break
+        else:
+            print("Bot: I'm just a simple bot, I don't have much to say.")
