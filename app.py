@@ -4,10 +4,11 @@ from controllers.addmodulowindow import AddModuloWindow
 from controllers.listmoduloswindow import ListModulosWindows
 from controllers.addsucursalwindow import AddSucursalWindow
 from controllers.addsucursal import FrmAddSucursal
+from controllers.sucursales import Sucursales
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    window = FrmAddSucursal()
+    window = Sucursales()
     window.show()
     
     sys.exit(app.exec())
