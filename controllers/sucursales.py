@@ -39,3 +39,5 @@ class Sucursales(QWidget, Ui_FrmSucursales):
             fila = fila + 1
 
         self.tblSucursales.resizeColumnsToContents()
+        
+        

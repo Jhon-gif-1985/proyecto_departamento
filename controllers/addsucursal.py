@@ -73,7 +73,7 @@ class FrmAddSucursal(QWidget, Ui_FrmAddSucursal):
                 ciudadresul = self.repositorio_departamento.get_city_by_dpto_bynombre_ciudad(dpto, ciudad)
                 sucursal = Sucursal(id=0, id_dpto=departamento.get_id(), id_ciudad=ciudadresul.get_idciudad(), sucursal=nombre, direccion=direccion, telefono=telefono, observaciones=observaciones, estado=1)
                 self.repositorio_sucursal.save(sucursal)
-            
+                print(sucursal)
                 self.mostrar_mensaje(titulo="Guardar", texto="Guardar", textoinformativo="Se guardó la información de manera satisfactoria", tipo=QMessageBox.Information)            
                 self.limpiar_campos()
                 
